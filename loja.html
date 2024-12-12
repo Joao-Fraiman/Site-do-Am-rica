@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>América Futebol Clube</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="imagens-noticias/escudo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./JS/script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <section class="hd">
+            <a id="logo" href="loja.html">
+                <img src="./imagens-noticias/escudo.png" alt="Logo" width="80">
+            </a>
+        </section>
+
+        <nav>
+            <ul id="nv">
+                <li><a href="noticias.html" class="navi">NOTÍCIAS</a></li>
+                <li><a href="elenco.html" class="navi">Elenco</a></li>
+                <li class="dropdown">
+                    <a href="tabela.html" class="navi">Classificação</a>
+                    <ul class="dropdown-content">
+                        <li><a href="tabela.html#Brasileiro">Campeonato Brasileiro</a></li>
+                        <li><a href="tabela.html#Potiguar">Campeonato Potiguar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="historia.html" class="navi">História</a>
+                    <ul class="dropdown-content">
+                        <li><a href="historia.html#fundacao">Fundação</a></li>
+                        <li><a href="historia.html#inicio">Início do Futebol</a></li>
+                        <li><a href="historia.html#decada20">Década de 20</a></li>
+                        <li><a href="historia.html#decada30">Década de 30</a></li>
+                        <li><a href="historia.html#decada40e50">Década de 40 e 50</a></li>
+                        <li><a href="historia.html#decada60">Década de 60</a></li>
+                        <li><a href="historia.html#decada70">Década de 70</a></li>
+                        <li><a href="historia.html#decadai80">Início da Década de 80</a></li>
+                        <li><a href="historia.html#decadaf80">Final da Década de 80</a></li>
+                        <li><a href="historia.html#ano1996">Ano de 1996</a></li>
+                        <li><a href="historia.html#brasileiro97e98">Campeonato Brasileiro 97 e 98</a></li>
+                        <li><a href="historia.html#copaDoNordeste">Campeão da Copa do Nordeste 98</a></li>
+                        <li><a href="historia.html#anos2000">Inicio dos anos 2000</a></li>
+                        <li><a href="historia.html#decada30">Década de 30</a></li>
+                        <li><a href="historia.html#cParaA0506">Da C para A</a></li>
+                        <li><a href="historia.html#2007_20010">Crise dos 4 anos</a></li>
+                        <li><a href="historia.html#2012">Fim do jejum 2012</a></li>
+                        <li><a href="historia.html#2014">Inicio da Era Arena das Dunas</a></li>
+                        <li><a href="historia.html#arena">Pioneirismo na Arena</a></li>
+                        <li><a href="historia.html#2022">Campeão Nacional 2022</a></li>
+                        <li><a href="historia.html#Simbolos">Símbolos do clube</a></li>
+                    </ul>
+                </li>
+                <li><a href="SOCIO.html" class="navi">Fala Torcedor</a></li>
+                <li><a href="loja.html" class="navi">Loja</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main class="bd">
+        <h1 class="tt">Loja Oficial</h1>
+
+        <div id="carrinho" class="carrinho">
+            <h2>Carrinho</h2>
+        
+            <!-- Lista de produtos no carrinho -->
+            <div id="itens-carrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+        
+            <!-- Total do carrinho -->
+            <p class="carrinho-total">
+                Total: <span id="total-valor">R$ 0,00</span>
+            </p>
+        
+            <!-- Botões de ação -->
+            <div class="carrinho-acoes">
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+                <button onclick="alternarListaProdutos()">LER MENOS</button>
+            </div>
+        </div>
+        
+        
+        <section class="mural">
+            <!-- Produto 1 -->
+            <div class="cont">
+                <img src="./imagens-loja/Camisa1-2024.jpg" alt="Uniforme 1 de 2024">
+                <h3 class="ttnoti">Uniforme 1 de 2024</h3>
+                <p class="textHist">R$ 250,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Uniforme 1 de 2024', 250.00)">Comprar</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="cont">
+                <img src="./imagens-loja/Camisa cruz.jpg" alt="Camisa da Cruz">
+                <h3 class="ttnoti">Camisa da Cruz</h3>
+                <p class="textHist">R$ 200,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Camisa da Cruz', 200.00)">Comprar</button>
+            </div>
+            
+            <!-- Produto 3 -->
+            <div class="cont">
+                <img src="./imagens-loja/camisa1-2021.jpg" alt="Uniforme 1 de 2021">
+                <h3 class="ttnoti">Uniforme 1 de 2021</h3>
+                <p class="textHist">R$ 200,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Uniforme 1 de 2021', 200.00)">Comprar</button>
+            </div>
+            <!-- Produto 4 -->
+            <div class="cont">
+                <img src="./imagens-loja/Camisa2-2022.webp" alt="Uniforme 2 de 2022">
+                <h3 class="ttnoti">Uniforme 2 de 2022</h3>
+                <p class="textHist">R$ 220,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Uniforme 2 de 2022', 220.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/camisa2-2023.jpg" alt="Uniforme 2 de 2023">
+                <h3 class="ttnoti">Uniforme 2 de 2023</h3>
+                <p class="textHist">R$ 230,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Uniforme 2 de 2023', 230.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/camisaCN-2024.webp" alt="Camisa Copa do Nordeste 2024">
+                <h3 class="ttnoti">Camisa Copa do Nordeste 2024</h3>
+                <p class="textHist">R$ 250,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Camisa Copa do Nordeste 2024', 250.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/CamisaGoleiro-2021.jpg" alt="Camisa de goleiro de 2021">
+                <h3 class="ttnoti">Camisa de Goleiro de 2021</h3>
+                <p class="textHist">R$ 200,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Camisa de Goleiro de 2021', 200.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/Caneca América.webp" alt="Caneca do América">
+                <h3 class="ttnoti">Caneca do América</h3>
+                <p class="textHist">R$ 60,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Caneca do América', 60.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/Copo do América.jpg" alt="Copo do América">
+                <h3 class="ttnoti">Copo do América</h3>
+                <p class="textHist">R$ 25,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Copo do América', 25.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/Mascote do América.jpg" alt="Mascote do América">
+                <h3 class="ttnoti">Copo do América</h3>
+                <p class="textHist">R$ 50,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Mascote do América', 50.00)">Comprar</button>
+            </div>
+            <div class="cont">
+                <img src="./imagens-loja/Quadro do América.webp" alt="Quadro do América">
+                <h3 class="ttnoti">Quadrp do América</h3>
+                <p class="textHist">R$ 35,00</p>
+                <button class="bot" onclick="adicionarAoCarrinho('Quadro do América', 35.00)">Comprar</button>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer class="ft">
+        <section>
+            <p class="pe">© Copyright. Todos os direitos reservados.</p>
+            <p class="pd">Desenvolvido por: João Felipe Fraiman</p>
+        </section>
+    </footer>
+    
+</body>
+
+</html>

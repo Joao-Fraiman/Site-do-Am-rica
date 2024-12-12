@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>América Futebol Clube</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="imagens-noticias/escudo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <section class="hd">
+            <a id="logo" href="socio.html">
+                <img src="./imagens-noticias/escudo.png" alt="Logo" width="80">
+            </a>
+        </section>
+
+        <nav>
+            <ul id="nv">
+                <li><a href="noticias.html" class="navi">NOTÍCIAS</a></li>
+                <li><a href="elenco.html" class="navi">Elenco</a></li>
+                <li class="dropdown">
+                    <a href="tabela.html" class="navi">Classificação</a>
+                    <ul class="dropdown-content">
+                        <li><a href="tabela.html#Brasileiro">Campeonato Brasileiro</a></li>
+                        <li><a href="tabela.html#Potiguar">Campeonato Potiguar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="historia.html" class="navi">História</a>
+                    <ul class="dropdown-content">
+                        <li><a href="historia.html#fundacao">Fundação</a></li>
+                        <li><a href="historia.html#inicio">Início do Futebol</a></li>
+                        <li><a href="historia.html#decada20">Década de 20</a></li>
+                        <li><a href="historia.html#decada30">Década de 30</a></li>
+                        <li><a href="historia.html#decada40e50">Década de 40 e 50</a></li>
+                        <li><a href="historia.html#decada60">Década de 60</a></li>
+                        <li><a href="historia.html#decada70">Década de 70</a></li>
+                        <li><a href="historia.html#decadai80">Início da Década de 80</a></li>
+                        <li><a href="historia.html#decadaf80">Final da Década de 80</a></li>
+                        <li><a href="historia.html#ano1996">Ano de 1996</a></li>
+                        <li><a href="historia.html#brasileiro97e98">Campeonato Brasileiro 97 e 98</a></li>
+                        <li><a href="historia.html#copaDoNordeste">Campeão da Copa do Nordeste 98</a></li>
+                        <li><a href="historia.html#anos2000">Inicio dos anos 2000</a></li>
+                        <li><a href="historia.html#decada30">Década de 30</a></li>
+                        <li><a href="historia.html#cParaA0506">Da C para A</a></li>
+                        <li><a href="historia.html#2007_20010">Crise dos 4 anos</a></li>
+                        <li><a href="historia.html#2012">Fim do jejum 2012</a></li>
+                        <li><a href="historia.html#2014">Inicio da Era Arena das Dunas</a></li>
+                        <li><a href="historia.html#arena">Pioneirismo na Arena</a></li>
+                        <li><a href="historia.html#2022">Campeão Nacional 2022</a></li>
+                        <li><a href="historia.html#Simbolos">Símbolos do clube</a></li>
+                    </ul>
+                </li>
+                <li><a href="SOCIO.html" class="navi">Fala Torcedor</a></li>
+                <li><a href="loja.html" class="navi">Loja</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- Fala Torcedor Section -->
+    <main class="bd">
+        <section id="fala-torcedor">
+            <h2 class="tt">Fala Torcedor</h2>
+            <div class="comentarios">
+                <!-- Comentários existentes -->
+                <div class="comentario">
+                    <p class="autor"><strong>João Silva:</strong></p>
+                    <p class="texto">Ótima vitória do Mecão! Vamos com tudo!</p>
+                </div>
+                <div class="comentario">
+                    <p class="autor"><strong>Ana Torres:</strong></p>
+                    <p class="texto">O estádio estava lindo ontem! Parabéns ao time!</p>
+                </div>
+            </div>
+
+            <!-- Formulário de envio de comentário -->
+            <div class="formulario-comentario">
+                <h3 class="ttnoti">Envie seu comentário:</h3>
+                <form id="comentario-form">
+                    <textarea id="comentario-texto" placeholder="Digite seu comentário aqui..." required></textarea>
+                    <input type="text" id="comentario-nome" placeholder="Seu nome" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ft">
+        <section>
+            <p class="pe">© Copyright. Todos os direitos reservados.</p>
+            <p class="pd">Desenvolvido por: João Felipe Fraiman</p>
+        </section>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
